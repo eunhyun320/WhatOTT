@@ -1,0 +1,1041 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="menubar2.css">
+        <link rel="stylesheet" href="반응형+항목제대로.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <script src="반응형+항목제대로.js" defer></script>
+        <script src="menubar.js" defer></script>
+        <script src="https://kit.fontawesome.com/e0e17a6557.js" crossorigin="anonymous"></script>
+        
+    </head>
+    <body>
+        <header>
+            <nav>
+                <input id="menubar" type="checkbox">
+                <div class="logo">
+                    <img src="로고 배경제거.png" alt="logo">
+                </div>
+                <div id="menu">
+                    <ul class="links">
+                        <li class="main"><a href="#">넷플릭스</a>
+                            <ul class="sub">
+                                <li><a href="#">영화</a></li>
+                                <li><a href="#">드라마</a></li>
+                                <li><a href="#">예능</a></li>
+                            </ul>
+                        </li>
+                        <li class="main"><a href="#">티빙</a>
+                            <ul class="sub">
+                                <li><a href="#">드라마</a></li>
+                                <li><a href="#">예능</a></li>
+                            </ul>
+                        </li>
+                        <li class="main"><a href="#">웨이브</a>
+                            <ul class="sub">
+                                <li><a href="#">드라마</a></li>
+                                <li><a href="#">예능</a></li>
+                            </ul>
+                        </li>
+                        <li class="main"><a href="#">디즈니플러스</a>
+                            <ul class="sub">
+                                <li><a href="#">애니메이션</a></li>
+                                <li><a href="#">다큐멘터리</a></li>
+                                <li><a href="#">드라마</a></li>
+                                <li><a href="#">예능</a></li>
+                                <li><a href="#">영화</a></li>
+                            </ul>
+                        </li>
+                        <li class="main"><a href="#">더보기</a>
+                            <ul class="sub">
+                                <li><a href="#">고객센터</a></li>
+                                <li><a href="#">Q&A</a></li>
+                                <li><a href="#">공지사항</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <label for="menubar" class="icon-burger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </label>
+                <div class="Search">
+                   <form class="search display-flex-center"></form>
+                    <div class="display-flex-center position-relative">
+                        <input class="search_bar" type="text" placeholder="검색하기" onkeypress="if (event.keyCode == 13)">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+            <div >
+                <img class="image" src="배너이미지.jpg" alt="">
+            </div>
+        
+        <main>
+            <!--넷플-->
+            <section>
+                <h2>넷플릭스</h2>
+
+                <!--윗 부분(인기 작품들)-->
+                <div class="net-wrap">
+                    <i id="left" class="fa-solid fa-angle-left"></i>
+                    <div class="carous">
+                        <img src="./넷플사진/익스트랙션.jpg" alt="넷플릭스이미지" draggable="false">
+                        <img src="./넷플사진/더 글로리.jpg" alt="넷플릭스이미지" draggable="false">
+                        <img src="./넷플사진/스위트홈.jpg" alt="넷플릭스이미지" draggable="false">
+                        <img src="./넷플사진/웬즈데이.webp" alt="넷플릭스이미지" draggable="false">
+                        <img src="./넷플사진/버드 박스.jpg" alt="넷플릭스이미지" draggable="false">
+                        <img src="./넷플사진/이두나!.webp" alt="넷플릭스이미지" draggable="false">
+                        <img src="./넷플사진/수리남.webp" alt="넷플릭스이미지" draggable="false">
+                        <img src="./넷플사진/정신병동에도 아침이 와요.jpg" alt="넷플릭스이미지" draggable="false">
+                        <img src="./넷플사진/지금 우리 학교는.jpg" alt="넷플릭스이미지" draggable="false">
+                        <img src="./넷플사진/오징어게임.jpg" alt="넷플릭스이미지" draggable="false">
+                        <img src="./넷플사진/D.P..webp" alt="넷플릭스이미지" draggable="false">
+                        <img src="./넷플사진/인간수업.webp" alt="넷플릭스이미지" draggable="false">
+                        <img src="./넷플사진/스마트폰을 떨어뜨렸을 뿐인데.jpg" alt="넷플릭스이미지" draggable="false">
+                        <img src="./넷플사진/승리호.jpg" alt="넷플릭스이미지" draggable="false">
+                        <img src="./넷플사진/브리저튼 시즌2.webp" alt="넷플릭스이미지" draggable="false">
+                        <img src="./넷플사진/소년심판.jpg" alt="넷플릭스이미지" draggable="false">
+                        <img src="./넷플사진/무브 투 헤븐 _나는 유품정리사입니다.jpg" alt="넷플릭스이미지" draggable="false">
+                    </div>
+                    <i id="right" class="fa-solid fa-angle-right"></i>
+                </div>
+
+                <br>
+                <!--옵션선택-->
+                <select  name="" id="changeImg" onchange="changeImages()">
+                    <optgroup label="영화">
+                        <option value="m-horor">공포/스릴러</option>
+                        <option value="m-romance">로맨스</option>
+                        <option value="m-action">액션/SF</option>
+                        <option value="m-drama">드라마</option>
+                    </optgroup>
+                    <optgroup label="드라마">
+                        <option value="d-medical">의학/휴먼</option>
+                        <option value="d-romance">로맨스</option>
+                        <option value="d-horor">공포/스릴러/범죄/미스터리</option>
+                        <option value="d-action">액션</option>
+                    </optgroup>
+                    <optgroup label="예능">
+                        <option value="fun">예능</option>
+                    </optgroup>
+                    <optgroup label="애니메이션">
+                        <option value="ani">애니메이션</option>
+                    </optgroup>
+                </select>
+
+                <!--아래 부분-->
+                <div id="image-container">  
+                    <div id="horor-container">             
+                        <div class="wrapper">
+                            <i id="left-horor" class="fa-solid fa-angle-left"></i>
+                            <div class="carousel">
+                                <img src="./넷플사진/콜.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/노웨어.png" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/패러다이스.png" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/아이리시맨.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/익스트랙션.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/제8일의 밤.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/탈피.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/스마트폰을 떨어뜨렸을 뿐인데.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/클로버필드 패러독스.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/하트오브 스톤.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/6 언더그라운드.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/야차.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/록트 인.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/프랙처드.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/런.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/악마는 사라지지 않는다.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/페일 블루 아이.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/종말의 끝.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/버드 박스.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/사냥의 시간.jpg" alt="넷플릭스이미지" draggable="false">
+                            </div>
+                            <i id="right-horor" class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </div> 
+                    <div id="romance-container">
+                        <div class="wrapper">
+                            <i id="left-romance" class="fa-solid fa-angle-left"></i>
+                            <div class="carousel">
+                                <img src="./넷플사진/20세기 소녀.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/새콤달콤.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/첫눈에 반할 통계적 확률.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/노엘 다이어리.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/우리는 모두 어른이 될 수 없었다.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/홀리데이트.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/러브 하드.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/모럴센스.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/폭풍의 시간.jpg" alt="넷플릭스이미지" draggable="false">
+
+                            </div>
+                            <i id="right-romance" class="fa-solid fa-angle-right"></i>
+                        </div>    
+                    </div>
+                    <div id="action-container">
+                        <div class="wrapper">
+                            <i id="left-action" class="fa-solid fa-angle-left"></i>
+                            <div class="carousel">
+                                <img src="./넷플사진/독전.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/더 킬러.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/발레리나.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/길복순.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/트리플 프론티어.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/낙원의 밤.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/돈 룩 업.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/페인 허슬러.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/옥자.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/카터.jpeg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/익스트랙션.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/서울대작전.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/승리호.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/루터_태양의 몰락.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/종말의 끝.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/버드 박스.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/클로버필드 패러독스.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/헬 독스.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/하트오브 스톤.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/야차.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/에놀라 홈즈.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/올드 가드.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/루터_태양의 몰락.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/정이.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/러브 앤 몬스터즈.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/애덤 프로젝트.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/종말의 끝.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/버드 박스.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/여도둑들.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/바람의 검심  최종장_더 비기닝.jpg" alt="넷플릭스이미지" draggable="false">
+                                
+                            </div>
+                            <i id="right-action" class="fa-solid fa-angle-right"></i>
+                        </div>    
+                    </div>
+                    <div id="drama-container">
+                        <div class="wrapper">
+                            <i id="left-drama" class="fa-solid fa-angle-left"></i>
+                            <div class="carousel">
+                                <img src="./넷플사진/도이 보이.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/나이애드의 다섯 번째 파도.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/크리스마스 연대기_두번째 이야기.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/폴링 포 크리스마스.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/결혼 이야기.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/더 킹_헨리 5세.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/언포기버블.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/치히로 상.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/에놀라 홈즈.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/포가튼 러브.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/채털리 부인의 연인.png" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/서부 전선 이상 없다.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/크리스마스로 불리는 소년.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/야쿠자와 가족.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/기상천외한 헨리 슈거 이야기.jpg" alt="넷플릭스이미지" draggable="false">
+                            </div>
+                            <i id="right-drama" class="fa-solid fa-angle-right"></i>
+                        </div>    
+                    </div>
+                    <div id="medical-container">
+                        <div class="wrapper">
+                            <i id="left-medical" class="fa-solid fa-angle-left"></i>
+                            <div class="carousel">
+                                <img src="./넷플사진/정신병동에도 아침이 와요.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/퀸스 갬빗.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/소년심판.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/무브 투 헤븐 _나는 유품정리사입니다.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/길모어 걸스_한 해의 스케치.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/빨간 머리 앤.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/겨우, 서른.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/더 데이스.jpg" alt="넷플릭스이미지" draggable="false">
+                            </div>
+                            <i id="right-medical" class="fa-solid fa-angle-right"></i>
+                        </div>    
+                    </div>
+                    <div id="dramaromance-container">
+                        <div class="wrapper">
+                            <i id="left-dramaromance" class="fa-solid fa-angle-left"></i>
+                            <div class="carousel">
+                                <img src="./넷플사진/이두나!.webp" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/너의 시간 속으로.webp" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/좋아하면 울리는 시즌1~시즌2.webp" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/연애대전.webp" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/퍼스트 러브 하츠코이.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/브리저튼 시즌2.webp" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/온리 포 러브.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/빌어먹을 세상 따위 시즌 2.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/너의 모든 것 시즌3.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/엑스오, 키티.webp" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/이지파생활.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/유성화원.png" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/샬럿 왕비_브리저튼 외전.jpg" alt="넷플릭스이미지" draggable="false">
+                                
+                            </div>
+                            <i id="right-dramaromance" class="fa-solid fa-angle-right"></i>
+                        </div>    
+                    </div>
+                    <div id="thrill-container">
+                        <div class="wrapper">
+                            <i id="left-thrill" class="fa-solid fa-angle-left"></i>
+                            <div class="carousel">
+                                <img src="./넷플사진/더 글로리.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/스위트홈.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/피키 블라인더스 시즌 6.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/마스크걸.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/퀸메이커.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/지금 우리 학교는.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/오징어게임.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/D.P..webp" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/인간수업.webp" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/보건교사 안은영.webp" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/수리남.webp" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/웬즈데이.webp" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/택배기사.webp" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/나이트 에이전트.webp" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/지옥.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/모범가족.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/안나라수마나라.webp" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/퀸메이커.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/나이트 에이전트.webp" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/피키 블라인더스 시즌 6.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/소년심판.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/기묘한 이야기 시즌4.webp" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/모범가족.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/매니페스트 시즌3.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/보건교사 안은영.webp" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/고요의 바다.webp" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/바디스.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/애나만들기.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/킹덤.webp" alt="넷플릭스이미지" draggable="false">
+                                
+                            </div>
+                            <i id="right-thrill" class="fa-solid fa-angle-right"></i>
+                        </div>    
+                    </div>
+                    <div id="dramaaction-container">
+                        <div class="wrapper">
+                            <i id="left-dramaaction" class="fa-solid fa-angle-left"></i>
+                            <div class="carousel">
+                                <img src="./넷플사진/마이네임.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/사냥개들.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/도적_칼의 소리.webp" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/종이의 집 _공동경제구역.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/우리가 볼 수 없는 모든 빛.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/엄브렐러 아카데미.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/킹덤.webp" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/라스트 킹덤.jpg" alt="넷플릭스이미지" draggable="false">
+                            </div>
+                            <i id="right-dramaaction" class="fa-solid fa-angle-right"></i>
+                        </div>    
+                    </div>
+                    <div id="fun-container">
+                        <div class="wrapper">
+                            <i id="left-fun" class="fa-solid fa-angle-left"></i>
+                            <div class="carousel">
+                                <img src="./넷플사진/코미디 로얄.webp" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/데블스 플랜.webp" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/열아홉 스물.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/솔로지옥 시즌2.webp" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/오징어게임_더 챌린지.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/사이렌_불의섬.webp" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/좀비버스.webp" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/러브 빌리지.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/범인은 바로너.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/피지컬100.webp" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/코리아 넘버원.webp" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/투핫.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/신세계로부터.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/먹보와 털보.webp" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/백스피릿.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/더 몰.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/이즈 잇 케이크.jpg" alt="넷플릭스이미지" draggable="false">
+                                
+                            </div>
+                            <i id="right-fun" class="fa-solid fa-angle-right"></i>
+                        </div>    
+                    </div>
+                    <div id="ani-container">
+                        <div class="wrapper">
+                            <i id="left-ani" class="fa-solid fa-angle-left"></i>
+                            <div class="carousel">
+                                <img src="./넷플사진/푸른 눈의 사무라이.webp" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/클라우스.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/울고 싶은 나는 고양이 가면을 쓴다.webp" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/플루토.webp" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/사이버펑크_엣지러너.webp" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/귀무자.webp" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/유니콘 아카데미.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/굿 나이트 월드.webp" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/외모지상주의.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/나의 행복한 결혼.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/악마 군.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/블루 피리어드.webp" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/스콧 필그림, 날아오르다!.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/아케인.jpg" alt="넷플릭스이미지" draggable="false">
+                                <img src="./넷플사진/죠죠의 기묘한 모험.png" alt="넷플릭스이미지" draggable="false">
+                            </div>
+                            <i id="right-ani" class="fa-solid fa-angle-right"></i>
+                        </div>    
+                    </div>
+                </div>
+            </section>
+            <br><br>
+
+            <!--티빙-->
+            <section>
+                <h2>티빙</h2>
+
+                <!--윗 부분-->
+                <!--인기작품들-->
+                <div class="tv-wrap">
+                    <i id="left" class="fa-solid fa-angle-left"></i>
+                    <div class="tv-carous">
+                        <img src="./티빙 사진/해피니스.png" alt="티빙이미지" draggable="false">
+                        <img src="./티빙 사진/술도녀.png" alt="티빙이미지" draggable="false">
+                        <img src="./티빙 사진/환승연애.png" alt="티빙이미지" draggable="false">
+                        <img src="./티빙 사진/환승연애2.png" alt="티빙이미지" draggable="false">
+                        <img src="./티빙 사진/마녀사냥.png" alt="티빙이미지" draggable="false">
+                        <img src="./티빙 사진/브로앤마블.png" alt="티빙이미지" draggable="false">
+                        <img src="./티빙 사진/여고추리반.png" alt="티빙이미지" draggable="false">
+                        <img src="./티빙 사진/해피뉴이어.png" alt="티빙이미지" draggable="false">
+                        <img src="./티빙 사진/청춘엠티.png" alt="티빙이미지" draggable="false">
+                        <img src="./티빙 사진/결혼이혼사이.png" alt="티빙이미지" draggable="false">
+                    </div>
+                    <i id="right" class="fa-solid fa-angle-right"></i>
+                </div>
+                
+                <br>
+                <!--옵션 선택-->
+                <select name="" id="changetvImg" onchange="changetvImages()">
+                    
+                    <optgroup label="드라마">
+                        <option value="d-horor">공포/스릴러</option>
+                        <option value="d-romance">로맨스</option>
+                        <option value="d-comic">코미디</option>
+                        <option value="d-sf">SF/판타지</option>
+                    </optgroup>
+                    <optgroup label="예능">
+                        <option value="f-romance">연애/로맨스</option>
+                        <option value="f-comic">코미디/일상/리얼</option>
+                        <option value="f-survive">서바이벌/음악</option>
+                    </optgroup>
+                    <optgroup label="영화/애니메이션">
+                        <option value="movieani">영화/애니메이션</option>
+                    </optgroup>
+                    <optgroup label="교양/다큐멘터">
+                        <option value="tvdocu">교양/다큐멘터리</option>
+                    </optgroup>
+                    
+                </select>
+                
+                <!--아래 부분-->
+                <div id="image-container">  
+                    <div id="tvhoror-container">             
+                        <div class="wrapper">
+                            <i id="left-tvhoror" class="fa-solid fa-angle-left"></i>
+                            <div class="carousel">
+                                <img src="./티빙 사진/운수오진날.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/돼지의왕.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/해피니스.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/해피니스무삭제.webp" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/몸값.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/방과후 전쟁활동.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/이재곧죽습니다.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/아일랜드.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/욘더.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/장미멘션.png" alt="티빙이미지" draggable="false">
+                            </div>
+                            <i id="right-tvhoror" class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </div> 
+                    <div id="tvromance-container">
+                        <div class="wrapper">
+                            <i id="left-tvromance" class="fa-solid fa-angle-left"></i>
+                            <div class="carousel">
+                                <img src="./티빙 사진/당신의운명을쓰고.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/개미가타고있어요.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/해피니스.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/술도녀2.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/유미의세포들.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/유미의세포들2.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/우리가사랑했던모든것.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/나를사랑하지않는X에게.png" alt="티빙이미지" draggable="false">
+                            </div>
+                            <i id="right-tvromance" class="fa-solid fa-angle-right"></i>
+                        </div>    
+                    </div>
+                    <div id="tvcomic-container">
+                        <div class="wrapper">
+                            <i id="left-tvcomic" class="fa-solid fa-angle-left"></i>
+                            <div class="carousel">
+                                <img src="./티빙 사진/개미가타고있어요.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/술도녀.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/술도녀2.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/유미의세포들.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/유미의세포들2.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/내과박원장.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/어른연습생.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/잔혹한인턴.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/아직최선을다하지않았을뿐.png" alt="티빙이미지" draggable="false">
+                            </div>
+                            <i id="rig3ht-tvcomic" class="fa-solid fa-angle-right"></i>
+                        </div>    
+                    </div>
+                    <div id="tvSF-container">
+                        <div class="wrapper">
+                            <i id="left-tvSF" class="fa-solid fa-angle-left"></i>
+                            <div class="carousel">
+                                <img src="./티빙 사진/해피니스.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/해피니스무삭제.webp" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/방과후 전쟁활동.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/이재곧죽습니다.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/욘더.png" alt="티빙이미지" draggable="false">
+                            </div>
+                            <i id="right-tvSF" class="fa-solid fa-angle-right"></i>
+                        </div>    
+                    </div>
+                    <div id="tvfunrom-container">
+                        <div class="wrapper">
+                            <i id="left-tvfunrom" class="fa-solid fa-angle-left"></i>
+                            <div class="carousel">
+                                <img src="./티빙 사진/소년소녀.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/환승연애.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/환승연애2.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/마녀사냥.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/러브캐쳐-발리.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/러브캐쳐-서울.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/각자의본등대로2.png " alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/가상세계지만 스타가 되고 싶어.webp" alt="티빙이미지" draggable="false">
+                            </div>
+                            <i id="right-tvfunrom" class="fa-solid fa-angle-right"></i>
+                        </div>    
+                    </div>
+                    <div id="tvfuncomic-container">
+                        <div class="wrapper">
+                            <i id="left-tvfuncomic" class="fa-solid fa-angle-left"></i>
+                            <div class="carousel">
+                                <img src="./티빙 사진/스프링캠프.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/청춘엠티.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/결혼이혼사이.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/결혼과이혼사이2.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/서울체크인.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/더디저트.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/두발로티켓팅.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/아이돌받아쓰기대회.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/브로앤마블.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/만찢남.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/골신강림.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/전체관람가.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/떴수다.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/여고1.webp" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/여고추리반.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/여고코멘.webp" alt="티빙이미지" draggable="false">
+                            </div>
+                            <i id="right-tvfuncomic" class="fa-solid fa-angle-right"></i>
+                        </div>    
+                    </div>
+                    <div id="tvfunsurvive-container">
+                        <div class="wrapper">
+                            <i id="left-tvfunsurvive" class="fa-solid fa-angle-left"></i>
+                            <div class="carousel">
+                                <img src="./티빙 사진/보물찾기.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/러브캐쳐-발리.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/더디저트.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/러브캐쳐-서울.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/제로섬게임.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/만찢남.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/웹툰싱어.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/유명가수.webp" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/힙합.webp" alt="티빙이미지" draggable="false">
+
+                            </div>
+                            <i id="right-tvfunsurvive" class="fa-solid fa-angle-right"></i>
+                        </div>    
+                    </div>
+                    <div id="tvmovieani-container">
+                        <div class="wrapper">
+                            <i id="left-tvmovieani" class="fa-solid fa-angle-left"></i>
+                            <div class="carousel">
+                                <img src="./티빙 사진/미드나이트.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/미드나이트자막.webp" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/해피뉴이어.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/해피1.webp" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/해피2.webp" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/해피3.webp" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/해피4.webp" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/해피5.webp" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/해피6.webp" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/서복.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/서북자막.webp" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/서북1.webp" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/서북2.webp" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/샤크.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/전체관람가.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/신비뱀파이어.webp" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/신비조선.webp" alt="티빙이미지" draggable="false">
+
+                            </div>
+                            <i id="right-tvmovieani" class="fa-solid fa-angle-right"></i>
+                        </div>    
+                    </div>
+                    <div id="tvtvdocu-container">
+                        <div class="wrapper">
+                            <i id="left-tvtvdocu" class="fa-solid fa-angle-left"></i>
+                            <div class="carousel">
+                                <img src="./티빙 사진/미래엔딩.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/엘지.webp" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/mbti 사주.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/케이팝제너레이션.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/백종원.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/푸드크로니클.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/씬.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/alive.png" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/괴이제작기.webp" alt="티빙이미지" draggable="false">
+                                <img src="./티빙 사진/이종건 비평가의 건축학개론.webp" alt="티빙이미지" draggable="false">
+
+                            </div>
+                            <i id="right-tvtvdocu" class="fa-solid fa-angle-right"></i>
+                        </div>    
+                    </div>
+                    
+                    
+
+                
+            </section>
+            
+            <br><br>
+            <!--웨이브-->
+            <section>
+                <h2>웨이브</h2>
+
+                <!--윗 부분(인기 작품들)-->
+                <div class="wavve-wrap">
+                    <i id="left" class="fa-solid fa-angle-left"></i>
+                    <div class="wavve-carous">
+                        <img src="./웨이브사진/약한영웅.jpg" alt="웨이브이미지" draggable="false">
+                        <img src="./웨이브사진/국가수사본부.jpg" alt="웨이브이미지" draggable="false">
+                        <img src="./웨이브사진/경찰수업.jpg" alt="웨이브이미지" draggable="false">
+                        <img src="./웨이브사진/원더우먼.jpg" alt="웨이브이미지" draggable="false">
+                        <img src="./웨이브사진/녹두전.jpg" alt="웨이브이미지" draggable="false">
+                        <img src="./웨이브사진/유레이즈미업.jpg" alt="웨이브이미지" draggable="false">
+                        <img src="./웨이브사진/오월의 청춘.jpg" alt="웨이브이미지" draggable="false">
+                        <img src="./넷플사진/수리남.webp" alt="웨이브이미지" draggable="false">
+                        <img src="./웨이브사진/검은태양.jpg" alt="웨이브이미지" draggable="false">
+                        <img src="./웨이브사진/바람피면 죽는다.jpg" alt="웨이브이미지" draggable="false">
+                        
+                    </div>
+                    <i id="right" class="fa-solid fa-angle-right"></i>
+                </div>
+                
+                <br>
+                <!--옵션선택-->
+                <select name="" id="changewavveImg" onchange="changewavveImages()">        
+                    <optgroup label="드라마">
+                        <option value="wd-action">액션</option>
+                        <option value="wd-horror">공포/스릴러/범죄/미스터리</option>
+                        <option value="wd-romance">로맨스</option>
+                        <option value="wd-comedy">코미디</option>
+                    </optgroup>
+                    <optgroup label="예능">
+                        <option value="w-fun">예능</option>  
+                    </optgroup>
+                    
+                </select>
+
+                <!--아래 부분-->
+                <div id="image-container">  
+                    <div id="wdaction-container">             
+                        <div class="wrapper">
+                            <i id="left-wdaction" class="fa-solid fa-angle-left"></i>
+                            <div class="carousel">
+                                <img src="./웨이브사진/약한영웅.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/원더우먼.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/검은태양.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/앨리스.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/독고리와인드.jpg" alt="웨이브이미지" draggable="false">
+                            </div>
+                            <i id="right-wdaction" class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </div> 
+                    <div id="wdhorror-container">             
+                        <div class="wrapper">
+                            <i id="left-wdhorror" class="fa-solid fa-angle-left"></i>
+                            <div class="carousel">
+                                <img src="./웨이브사진/거래.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/트레이서.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/나는 길에서 연예인을 주웠다.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/악의 마음을 읽는자들.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/쇼윈도_여왕의 집.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/약한영웅.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/원더우먼.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/검은태양.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/경찰수업.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/바람피면 죽는다.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/복수해라.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/나의 위험한 아내.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/앨리스.jpg" alt="웨이브이미지" draggable="false">
+
+                            </div>
+                            <i id="right-wdhorror" class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </div> 
+                    <div id="wdromance-container">             
+                        <div class="wrapper">
+                            <i id="left-wdromance" class="fa-solid fa-angle-left"></i>
+                            <div class="carousel">
+                                <img src="./웨이브사진/박하경 여행기.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/녹두전.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/유레이즈미업.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/청춘블라썸.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/나는 길에서 연예인을 주웠다.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/너미워! 줄리엣.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/웨이브 꽃피면 달생각하고.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/쇼윈도_여왕의 집.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/오월의 청춘.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/원더우먼.jpg" alt="웨이브이미지" draggable="false">
+
+                                <img src="./웨이브사진/보쌈 - 운명을 훔치다.jpg" alt="웨이브이미지" draggable="false">
+                                
+                                <img src="./웨이브사진/나의 위험한 아내.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/에스에프에잇.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/거짓말의 거짓말.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/넘버식스.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/애타는 로맨스.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/멜로홀릭.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/수요일 오후 3시 30분.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/이런 꽃같은 엔딩.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/복수노트.jpg" alt="웨이브이미지" draggable="false">
+
+
+                            </div>
+                            <i id="right-wdromance" class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </div> 
+                    <div id="wdcomedy-container">             
+                        <div class="wrapper">
+                            <i id="left-wdcomedy" class="fa-solid fa-angle-left"></i>
+                            <div class="carousel">
+                                <img src="./웨이브사진/이렇게 된 이상 청와대로 간다.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/위기의x.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/좀비탐정.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/나는 길에서 연예인을 주웠다.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/유레이즈미업.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/원더우먼.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/경찰수업.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/바람피면 죽는다.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/날아라 개천용.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/좀비탐정.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/꼰대인턴.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/회사를 관두는 최고의 순간.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/오목소녀.jpg" alt="웨이브이미지" draggable="false">
+                                
+
+
+                            </div>
+                            <i id="right-wdcomedy" class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </div> 
+                    <div id="wfun-container">             
+                        <div class="wrapper">
+                            <i id="left-wfun" class="fa-solid fa-angle-left"></i>
+                            <div class="carousel">
+                                <img src="./웨이브사진/국가수사본부.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/엑소의 사다리 타고 세계여행.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/좋아하면 울리는 짝짝짝.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/잠만 자는 사이.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/배틀그램.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/문명_최후의 섬.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/버튼게임.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/남의연애.png" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/어바웃타임.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/악인 취재기.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/피의게임.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/SynkRoad.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/더 타투이스트.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/레벨업 프로젝트.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/리슨업.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/입주쟁탈전 펜트하우스.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/도포자락 휘날리며.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/메리퀴어.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/MMM_Where are we now.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/탱키박스.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/THE BOYZ의 타임아웃.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/취향의 아이콘.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/반전의 하이라이트.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/M토피아.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/소년멘탈캠프 시즌2_NCT DREAM 편.jpg" alt="웨이브이미지" draggable="false">
+                                <img src="./웨이브사진/NCT LIFE in Osaka.jpg" alt="웨이브이미지" draggable="false">
+                                
+
+                            </div>
+                            <i id="right-wfun" class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </div> 
+                </div>
+            </section>
+
+            <br><br>
+            <!--디플-->
+            <section>
+                <h2>디즈니플러스</h2>
+
+                <!--윗 부분(인기 작품들)-->
+                <div class="dis-wrap">
+                    <i id="left" class="fa-solid fa-angle-left"></i>
+                    <div class="dis-carous">
+                        <img src="./디플사진/저스트 비욘드.webp" alt="디플이미지" draggable="false">
+                        <img src="./디플사진/최악의악.png" alt="디플이미지" draggable="false">
+                        <img src="./디플사진/너와  나의 경찰수업.jpg" alt="디플이미지" draggable="false">
+                        <img src="./디플사진/무빙.jpg" alt="디플이미지" draggable="false">
+                        <img src="./디플사진/문나이트.jpg" alt="디플이미지" draggable="false">
+                        <img src="./디플사진/윌로우.jpg" alt="디플이미지" draggable="false">
+                        <img src="./디플사진/만달로리안.jpg" alt="디플이미지" draggable="false">
+                        <img src="./디플사진/시크릿 인베이젼.png" alt="디플이미지" draggable="false">
+                        <img src="./디플사진/윌로우 비하인드.jpg" alt="디플이미지" draggable="false">
+                        <img src="./디플사진/올라프가 전해요.jpg" alt="디플이미지" draggable="false">
+                        <img src="./디플사진/완다비전.jpg" alt="디플이미지" draggable="false">
+                        <img src="./디플사진/베이맥스.webp" alt="디플이미지" draggable="false">
+
+                        
+                    </div>
+                    <i id="right" class="fa-solid fa-angle-right"></i>
+                </div>
+                
+                <br>
+                <!--옵션선택-->
+                <select name="" id="changedisImg" onchange="changedisImages()">
+                    <optgroup label="영화">
+                        <option value="dd-horor">미스터리/호러/범죄/스릴러</option>
+                        <option value="dd-comedy">코미디/로맨스</option>
+                        <option value="dd-action">액션/히어로/SF</option>    
+                    </optgroup>
+                    <optgroup label="드라마">
+                        <option value="d-korea">한국드라마</option> 
+                    </optgroup>
+                    
+                    <optgroup label="리얼리티">
+                        <option value="dr-comedy">코미디</option>
+                    </optgroup>
+                    <optgroup label="다큐멘터리">
+                        <option value="dd-music">자연/음악/스포츠</option>
+                        <option value="dd-making">메이킹/라이프스타일</option>
+                        <option value="dd-etc">기타</option>
+                    </optgroup>
+                    <optgroup label="애니메이션">
+                        <option value="d-ani">애니메이션</option>  
+                    </optgroup>
+                       
+                </select>
+                <!--아래 부분-->
+                <div id="image-container">  
+                    <div id="ddhoror-container">             
+                        <div class="wrapper">
+                            <i id="left-ddhoror" class="fa-solid fa-angle-left"></i>
+                            <div class="carousel">
+                                <img src="./디플사진/11월 이야기.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/내 잘못이 아니야-멕시코.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/저스트 비욘드.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/광기.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/평행 우주.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/아빠는 세 명.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/웨딩 시즌.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/미지의땅.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/모두 잊었으니까.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/월드컵 트로피를 훔쳐라.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/간니발.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/클리어링.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/서치.png" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/시크릿 인베이젼.png" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/프릭스.jpg" alt="디플이미지" draggable="false">
+
+                            </div>
+                            <i id="right-ddhoror" class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </div> 
+                    <div id="ddcomedy-container">             
+                        <div class="wrapper">
+                            <i id="left-ddcomedy" class="fa-solid fa-angle-left"></i>
+                            <div class="carousel">
+                                <img src="./디플사진/만달로리안.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/나의 대통령 일기.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/터너와 후치.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/저스트 비욘드.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/불안한 시그널_더 시리즈.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/얽히고 엮인 그녀들.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/주말에만 만나요.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/뻔뻔한 천사들.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/모두 같거나 혹은 다르거나.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/언제나 나 였어.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/변호사 쉬헐크.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/웨딩 시즌.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/모두 잊었으니까.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/으랏차차 스모부.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/수상한 관리인.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/월드컵 트로피를 훔쳐라.webp" alt="디플이미지" draggable="false">
+                            </div>
+                            <i id="right-ddcomedy" class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </div> 
+                    <div id="ddaction-container">             
+                        <div class="wrapper">
+                            <i id="left-ddaction" class="fa-solid fa-angle-left"></i>
+                            <div class="carousel">
+                                <img src="./디플사진/베네딕트 비밀클럽.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/문나이트.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/윌로우.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/내셔널 트레져_숨겨진 이야기.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/아메리칸 본 차이니즈.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/마이티 덕스-게임체인저.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/빅샷.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/송환자.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/으랏차차 스모부.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/완다비전.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/팔콘과 윈터 솔져.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/로키.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/호크아이.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/북 오브 보바 펫.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/평행 우주.jpg" alt="디플이미지" draggable="false">
+                            </div>
+                            <i id="right-ddaction" class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </div> 
+                    <div id="dkorea-container">             
+                        <div class="wrapper">
+                            <i id="left-dkorea" class="fa-solid fa-angle-left"></i>
+                            <div class="carousel">
+                                <img src="./디플사진/최악의악.png" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/너와  나의 경찰수업.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/그리드.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/사운드.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/키스 식스센스.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/형사록.png" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/3인칭 복수.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/커넥트.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/사랑이라 말해요.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/레이스.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/무빙.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/한강.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/비질란테.png" alt="디플이미지" draggable="false">
+                                
+                            </div>
+                            <i id="right-dkorea" class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </div>
+                    <div id="drcomedy-container">             
+                        <div class="wrapper">
+                            <i id="left-ddaction" class="fa-solid fa-angle-left"></i>
+                            <div class="carousel">
+                                <img src="./디플사진/재미있는 디즈니 공작교실.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/앙코르! 다시 무대로.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/리얼 라이프, 픽사.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/샵 클래스_어린 공학자.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/도전! 디즈니 셰프.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/빅 핍_누구의 거짓말.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/머펫 나우.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/지구에서 네드에게.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/로빈 로버츠_세상을 토론하다.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/판타스틱 푸드.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/퀘스트_에버렘을 수호하라.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/몬타네르 패밀리.jpg" alt="디플이미지" draggable="false">
+                                
+                            </div>
+                            <i id="right-ddaction" class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </div> 
+                    <div id="ddmusic-container">             
+                        <div class="wrapper">
+                            <i id="left-ddmusic" class="fa-solid fa-angle-left"></i>
+                            <div class="carousel">
+                                <img src="./디플사진/디즈니 애니멀 킹덤의 행복한 동물 세상.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/우리 침팬지를 소개합니다.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/지구를 느끼다.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/고래의 비밀.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/자라나는 동물들.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/웰컴 투 어스.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/소프라노 음악으로, 죽음으로.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/아메리카 더 뷰티풀.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/두려움 없이 호주여자풋볼 인사이드.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/버티 그레고리의 에픽 어드벤처.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/슈퍼내추럴.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/우리 팀을 구해줘 with 데이비드 베컴.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/보이스 라이징 와칸다 포에버 사운드트랙 스페셜.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/마틸다즈 월드컵으로의 여정.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/에드 시런 더 썸 오브 잇 올.jpg" alt="디플이미지" draggable="false">
+                            </div>
+                            <i id="right-ddmusic" class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </div> 
+                    <div id="ddmaking-container">             
+                        <div class="wrapper">
+                            <i id="left-ddmaking" class="fa-solid fa-angle-left"></i>
+                            <div class="carousel">
+                                <img src="./디플사진/제프 골드블럼의 호기심 세계.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/비커밍 꿈으로 가는 길.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/SparkShorts 비하인드.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/It Was Always Me Behind the Story.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/오비완 케노비 제다이가 돌아오다.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/안도르 디즈니 데이 스페셜.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/윌로우 비하인드.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/숨겨진 세상 겨울왕국2 메이킹.jpg" alt="디플이미지" draggable="false">
+                                
+                            </div>
+                            <i id="right-ddmaking" class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </div> 
+                    <div id="ddetc-container">             
+                        <div class="wrapper">
+                            <i id="left-ddetc" class="fa-solid fa-angle-left"></i>
+                            <div class="carousel">
+                                <img src="./디플사진/이매지니어링 스토리.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/마블 히어로 프로젝트.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/디즈니의 평범한 하루.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/소품과 영화.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/빌 파머와 함께하는 강아지의 삶.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/인사이드 픽사.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/진정한 필사의 도전.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/마블 616.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/토슈즈.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/어셈블.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/비하인드 어트랙션.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/오직 한 팀 - 페예노르트.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/우주 속으로.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/디즈니 인사이더.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/디즈니 갤러리 스타워즈 북 오브 보바 펫.webp" alt="디플이미지" draggable="false">
+                            </div>
+                            <i id="right-ddetc" class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </div> 
+                    <div id="dani-container">             
+                        <div class="wrapper">
+                            <i id="left-dani" class="fa-solid fa-angle-left"></i>
+                            <div class="carousel">
+                                <img src="./디플사진/포키는 궁금한 게 많아요.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/스파크쇼츠.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/디즈니 애니메이션 스튜디오 단편 모음.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/제니메이션.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/미키마우스의 멋진 대모험.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/픽사 팝콘.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/스타워즈_배드 배치.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/몬스터 근무일지.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/칩 앤 데일_파크 라이프.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/왓 이프.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/구피와 집에서.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/더그의 일상.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/스타워즈_비전스.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/올라프가 전해요.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/프라우드 패밀리 라우더 앤 프라우더.jpg" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/아이스 에이지 스크랫 이야기.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/베이맥스.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/주토피아+.webp" alt="디플이미지" draggable="false">
+                                <img src="./디플사진/카 여행을 떠나요.webp" alt="디플이미지" draggable="false">
+                            </div>
+                            <i id="right-dani" class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </div> 
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

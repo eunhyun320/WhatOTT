@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=IBM+Plex+Sans+KR:wght@600&display=swap');
+*{
+    margin: 0;
+    padding:  0;
+    box-sizing: border-box;
+}
+h2{
+    font-family: 'Black Han Sans', sans-serif;
+    font-weight: lighter;
+    color: white;
+}
+/*
+#genre{
+    font-weight: bold;
+}*/
+
+body{
+    
+    width: 1200px;
+    margin: 0 auto;  /*중앙정렬*/
+    padding: 10px 10px; /*h2 위,왼 여백*/
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #333;
+}
+
+main{
+    margin: 20px;
+}
+
+.wrapper{   /* 각 OTT의 아래줄 이미지*/
+    display: flex;
+    max-width: 1200px;
+    position: relative;
+}
+.wrapper i{   /* 각 OTT의 아래줄 이미지 버튼*/
+    top: 50%;
+    height: 44px;
+    width: 44px;
+    color: black;
+    cursor: pointer;
+    font-size: 1.15rem;
+    position: absolute;
+    text-align: center;
+    line-height: 44px;
+    background-color: white;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.1s linerar;
+}
+.wrapper i:active{
+    transform: translateY(-50%) scale(0.9);
+}
+.wrapper i:hover{
+    background-color:#f2f2f2;
+}
+.wrapper i:first-child{  /*왼쪽 버튼*/
+    left: -22px;
+    display: none;
+}
+
+.wrapper i:last-child{  /*오른쪽 버튼*/
+    right: -22px;
+}
+.wrapper .carousel{   /*각 OTT의 아랫줄 이미지들*/
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+/*x
+.carousel .dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.carousel.dragging img{
+pointer-events: none;
+}
+*/
+
+.carousel img{ /*이미지 크기조정 */
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    margin-left: 14px;
+}
+
+.fa-angle-left, .fa-angle-right {
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    }
+
+.carousel img:first-child{
+    margin-left: 0px;
+}
+
+/* #changeImg, #changetvImg, #changewavveImg, #changedisImg{
+    background-color: white;
+} */
+
+/*공통*/
+.net-wrap, .tv-wrap, .wavve-wrap, .dis-wrap{
+    display: flex;
+    max-width: 1200px;
+    position: relative;
+}
+.net-wrap i, .tv-wrap i, .wavve-wrap i, .dis-wrap i{  /*화살표*/
+    top: 50%;
+    height: 44px;
+    width: 44px;
+    color: black;
+    cursor: pointer;
+    font-size: 1.15rem;
+    position: absolute;
+    text-align: center;
+    line-height: 44px;
+    background-color: white;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.1s linerar;
+}
+.net-wrap i:active, .tv-wrap i:active, .wavve-wrap i:active, .dis-wrap i:active{
+    transform: translateY(-50%) scale(0.9);
+}
+.net-wrap i:hover, .tv-wrap i:hover, .wavve-wrap i:hover{
+    background-color:#f2f2f2;
+}
+.net-wrap i:first-child, .tv-wrap i:first-child, .wavve-wrap i:first-child, .dis-wrap i:first-child{
+    left: -22px;
+    display: none;
+}
+.net-wrap i:last-child, .tv-wrap i:last-child, .wavve-wrap i:last-child, .dis-wrap i:last-child{
+    right: -22px;
+}
+
+/*넷플 위부분 위한거*/
+.net-wrap .carous{
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.carous img{ /*이미지 크기조정 */
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    margin-left: 14px;
+}
+
+.carous img:first-child{
+    margin-left: 0px;
+}
+
+
+
+/*티빙 위부분 위한거*/
+.tv-wrap .tv-carous{
+    font-size: 0px;
+    cursor: pointer; /*사진 위에 커서 올렸을때 손가락 모양을 바뀜*/
+    overflow: hidden;
+    white-space: nowrap; 
+    scroll-behavior: smooth; /*사진 넘길때 부드럽게*/
+}
+
+.tv-carous img{ /*이미지 크기조정 */
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    margin-left: 14px;
+}
+.tv-carous img:first-child{
+    margin-left: 0px;
+}
+
+
+
+/*웨이브 위부분 위한거*/
+.wavve-wrap .wavve-carous{
+    font-size: 0px;
+    cursor: pointer; /*사진 위에 커서 올렸을때 손가락 모양을 바뀜*/
+    overflow: hidden;
+    white-space: nowrap; 
+    scroll-behavior: smooth; /*사진 넘길때 부드럽게*/
+}
+
+.wavve-carous img{ /*이미지 크기조정 */
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    margin-left: 14px;
+}
+
+.wavve-carous img:first-child{
+    margin-left: 0px;
+}
+
+
+
+/*디플 위부분 위한거*/
+.dis-wrap .dis-carous{
+    font-size: 0px;
+    cursor: pointer; /*사진 위에 커서 올렸을때 손가락 모양을 바뀜*/
+    overflow: hidden;
+    white-space: nowrap; 
+    scroll-behavior: smooth; /*사진 넘길때 부드럽게*/
+}
+
+.dis-carous img{ /*이미지 크기조정 */
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    margin-left: 14px;
+    /*width: calc(100%/4);  페이지에 이미지 4개 */
+}
+
+.dis-carous img:first-child{
+    margin-left: 0px;
+}
+
+/*미디어 태그*/
+@media screen and (max-width: 767px) {
+    body {
+        margin: 0 auto;
+        width: auto;
+    }
+
+    .carous img, .carousel img, .tv-carous img, .wavve-carous img, .dis-carous img{
+        width: 125px;
+        height: 175px;
+    }
+
+    .fa-angle-left, .fa-angle-right {
+        display: inline-block;
+        visibility: visible;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+    body {
+        margin: 0 auto;
+        width: auto;
+    }
+
+    .carous img, .carousel img, .tv-carous img, .wavve-carous img, .dis-carous img {
+        width: 125px;
+        height: 175px;
+    }
+
+    .fa-angle-left, .fa-angle-right {
+        display: inline-block;
+        visibility: visible;
+    }
+}
+
+    
+
+
+
+
